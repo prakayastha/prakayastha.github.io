@@ -14,6 +14,6 @@ Here is a list of publications I'm a part of:
   - Summary: If you have property information from a subgroup, then including some examples from the group can reproduce thier properties (within an acceptable error bar); circumventing the cost of DFT evaluations of the group. 
 - High-throughput design of Peierls and charge density wave phases in Q1D organometallic materials [Journal of Chemical Physics (2021)](https://doi.org/10.1063/5.0041717) 
   - Summary: Using positions of the maximum instability in the phonon mode to determine how many formula units it takes to stabilize Q1D polymers. Peierls and charge density wave phases found available for [data-mining](). 
-- The chemical space of B, N-substituted polycyclic aromatic hydrocarbons: Combinatorial enumeration and high-throughput first-principles modeling [Journal of Chemical Physics](https://doi.org/10.1063/1.5088083)
-  - Summary: The chemical space of of B,N substituted hydrocarbons is huge! 1.2 tera molecules (and even more) huge! These molecules have potential to be good opto-electronic materials. 
+- The chemical space of B, N-substituted polycyclic aromatic hydrocarbons: Combinatorial enumeration and high-throughput first-principles modeling [Journal of Chemical Physics (2019)](https://doi.org/10.1063/1.5088083)
+  - Summary: The chemical space of of B,N substituted hydrocarbons is huge! 1.2 tera molecules (and even more) huge! These molecules have potential to be good opto-electronic materials available for [data-mining](). 
  
