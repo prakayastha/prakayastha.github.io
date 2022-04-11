@@ -5,7 +5,7 @@ I am Prakriti Kayastha, a PhD student at Northumbria University, UK. I am part o
 My PhD advisor [Lucy](https://lucydot.github.io/) and I are interested in modelling materials for next-generation photovolatics and battery materials. These are very broad topics in themselves and I hope I can make a humble contribution to the field through during my PhD years. 
 Before starting my PhD, I was part of the [moldis-group](https://moldis-group.github.io/) at Tata Intitute of Fundamental Research Hyderabad, India. This is where my journey as a researcher started, where I developed my own interests in DFT, and learnt some machine learning techniques. 
 
-Here is a list of publications I'm a part of:
+Here is a list of my publications:
 - The Physical Significance of Imaginary Phonon Modes in Crystals [arXiv (2022)](https://arxiv.org/pdf/2203.01244.pdf)
   - Summary: Do not be alarmed if you see imaginary phonon modes in your (converged) calculations! They uncover great physical insights of the underlying potential energy surface and phase transitions of the syste. 
 - Quantum Machine Learning Transition Probabilities in Electronic Excitation Spectra across Chemical Space: The Resolution-vs.-Accuracy Dilemma [arXiv (2021)](https://arxiv.org/pdf/2110.11798.pdf)
