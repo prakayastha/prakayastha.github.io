@@ -8,7 +8,7 @@ Before starting my PhD, I was part of the [moldis-group](https://moldis-group.gi
 Here is a list of publications I'm a part of:
 - The Physical Significance of Imaginary Phonon Modes in Crystals [arXiv (2022)](https://arxiv.org/pdf/2203.01244.pdf)
   - Summary: Do not be alarmed if you see imaginary phonon modes in your (converged) calculations! They uncover great physical insights of the underlying potential energy surface and phase transitions of the syste. 
-- Quantum Machine Learning Transition Probabilities in Electronic Excitation Spectra across Chemical Space: The Resolution-vs.-Accuracy Dilemma [arXiv (2022)](https://arxiv.org/pdf/2110.11798.pdf)
+- Quantum Machine Learning Transition Probabilities in Electronic Excitation Spectra across Chemical Space: The Resolution-vs.-Accuracy Dilemma [arXiv (2021)](https://arxiv.org/pdf/2110.11798.pdf)
   - Summary: A new dataset for full excited state spectra of molecules in the [GDB](https://doi.org/10.1021/ci600423u) universe. Machine learning of excited state spectra over a range of wavelengths with front-runner representations using kernel ridge regression. 
 - Machine learning modeling of materials with a group-subgroup structure [Machine Learning: Science and Technology (2021)](https://doi.org/10.1088/2632-2153/abffe9)
   - Summary: If you have property information from a subgroup, then including some examples from the group can reproduce thier properties (within an acceptable error bar); circumventing the cost of DFT evaluations of the group. 
