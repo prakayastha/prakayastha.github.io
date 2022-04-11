@@ -1,6 +1,6 @@
 Hello and welcome to my personal website!
 
-I am Prakriti Kayastha, a PhD student at Northumbria University, UK. I am part of th Center for Doctoral Training in Renewable Energy Northeast Universities [(ReNU)](https://renu.northumbria.ac.uk/). My work is based on modelling materials using density functional theory (DFT). I am a computational physicist/chemist (based on who I'm speaking to) with an interest in machine learning. 
+I am Prakriti Kayastha, a PhD student at Northumbria University, UK. I am part of the Center for Doctoral Training in Renewable Energy Northeast Universities [(ReNU)](https://renu.northumbria.ac.uk/). My work is based on modelling materials using density functional theory (DFT). I am a computational physicist/chemist (based on who I'm speaking to) with an interest in machine learning. 
 
 My PhD advisor [Lucy](https://lucydot.github.io/) and I are interested in modelling materials for next-generation photovolatics and battery materials. These are very broad topics in themselves and I hope I can make a humble contribution to the field through during my PhD years. 
 Before starting my PhD, I was part of the [moldis-group](https://moldis-group.github.io/) at Tata Intitute of Fundamental Research Hyderabad, India. This is where my journey as a researcher started, where I developed my own interests in DFT, and learnt some machine learning techniques. 
