@@ -5,7 +5,7 @@ I am Prakriti Kayastha, a PhD student at Northumbria University, UK. I am part o
 My PhD advisor [Lucy](https://lucydot.github.io/) and I are interested in modelling materials for next-generation photovolatics and battery materials. These are very broad topics in themselves and I hope I can make a humble contribution to the field through during my PhD years. 
 Before starting my PhD, I was part of the [moldis-group](https://moldis-group.github.io/) at Tata Intitute of Fundamental Research Hyderabad, India. This is where my journey as a researcher started, where I developed my own interests in DFT, and learnt some machine learning techniques. I am particularly interested in crystallography and symmetries of materials and I am always excited to talk about it. 
 
-Currently, I am working on modelling spectroscopy of alternative Pb-based perovskites for solar cell applications. 
+Currently, I am working on modelling spectroscopy and thermodynamics of an alternative Pb-based perovskite for solar cell applications. A very bare-bones website is hosted [here](https://prakayastha.github.io/chalcogenide_perovskite/)  
 
 Here is a list of my publications:
 - The Physical Significance of Imaginary Phonon Modes in Crystals [arXiv (2022)](https://arxiv.org/pdf/2203.01244.pdf)
