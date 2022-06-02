@@ -21,15 +21,12 @@ Here is a list of my publications:
 - The chemical space of B, N-substituted polycyclic aromatic hydrocarbons: Combinatorial enumeration and high-throughput first-principles modeling [J Chem. Phys. (2019)](https://doi.org/10.1063/1.5088083)
   - Summary: The chemical space of of B,N substituted hydrocarbons is huge! 1.2 tera molecules (and even more) huge! These molecules have potential to be good opto-electronic materials available for [data-mining](https://moldis.tifrh.res.in/db/dbbnpah). 
  
-Here is a list of talks/posters I've delivered:
-
+Here is a list of talks/posters I've delivered:   
 Note: If you find an error/inconsistencies in any of the following please [reach out](mailto:prakayastha314@gmail.com), I would greatly appreciate it. 
 
-- Talk: Following the reaction: Computational spectroscopy of the BaZrS<sub>3</sub> perovskite
-- Poster: Following the reaction: Computational spectroscopy of perovskite BaZrS<sub>3</sub> 
-  
-  Presented at the IOP Advances in Photovoltaics conference, London on 23rd March 2022
+- Talk: Following the reaction: Computational spectroscopy of the BaZrS<sub>3</sub> perovskite 
+- Poster: Following the reaction: Computational spectroscopy of perovskite BaZrS<sub>3</sub>  
+  Presented at the IOP Advances in Photovoltaics conference, London on 23rd March 2022 
 - Poster: Phonopy-Spectroscopy: A computaional spectroscopy modelling package 
-
-  Presented at the Royal Society Software Solutions to the Challenges of Materials Modelling satellite meeting, Northampton on 8th June 2022
+  Presented at the Royal Society Software Solutions to the Challenges of Materials Modelling satellite meeting, Northampton on 8th June 2022 
 - Talk: Symmetry constrained relaxation with FHI-aims 
