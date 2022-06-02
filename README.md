@@ -1,4 +1,4 @@
-#Prakriti Kayastha
+# Prakriti Kayastha
 
 Hello and welcome to my personal website!
 
