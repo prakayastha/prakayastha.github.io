@@ -27,6 +27,6 @@ Note: If you find an error/inconsistencies in any of the following please [reach
 - Talk: Following the reaction: Computational spectroscopy of the BaZrS<sub>3</sub> perovskite 
 - Poster: Following the reaction: Computational spectroscopy of perovskite BaZrS<sub>3</sub>  
   Presented at the IOP Advances in Photovoltaics conference, London on 23rd March 2022 
-- Poster: Phonopy-Spectroscopy: A computaional spectroscopy modelling package 
+- Poster: Phonopy-Spectroscopy: A computaional spectroscopy modelling package  
   Presented at the Royal Society Software Solutions to the Challenges of Materials Modelling satellite meeting, Northampton on 8th June 2022 
 - Talk: Symmetry constrained relaxation with FHI-aims 
