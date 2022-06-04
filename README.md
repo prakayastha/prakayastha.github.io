@@ -24,8 +24,8 @@ Here is a list of my publications:
 Here is a list of talks/posters I've delivered:   
 Note: If you find an error/inconsistencies in any of the following please [reach out](mailto:prakayastha314@gmail.com), I would greatly appreciate it. 
 
-- Talk: Following the reaction: Computational spectroscopy of the BaZrS<sub>3</sub> perovskite 
-- Poster: Following the reaction: Computational spectroscopy of perovskite BaZrS<sub>3</sub>  
+- [Talk](./talks/PV_meeting_chalcogenides_perovskites.pdf): Following the reaction: Computational spectroscopy of the BaZrS<sub>3</sub> perovskite 
+- [Poster](./talks/BaZrS3_23March2022.pdf): Following the reaction: Computational spectroscopy of perovskite BaZrS<sub>3</sub>  
   Presented at the IOP Advances in Photovoltaics conference, London on 23rd March 2022 
 - Poster: Phonopy-Spectroscopy: A computaional spectroscopy modelling package  
   Presented at the Royal Society Software Solutions to the Challenges of Materials Modelling satellite meeting, Northampton on 8th June 2022 
