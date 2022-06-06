@@ -27,8 +27,8 @@ Note: If you find an error/inconsistencies in any of the following please [reach
   Presented at the Pan-TIFR chemistry meeting, Hyderabad on 30th November 2018
 - Poster: Data driven chemical insights into stability of 18e- AB2X2 chalcogenides 
   Presented at the TIFR Annual Chemistry Conference, Mumbai on 17th October 2019 
-- Talk: Group thoery of crystal structure preferences 
-- Presented at International Day of Women and Girls in Science, Hyderabad on 13th February 2020 
+- Talk: Group theory of crystal structure preferences 
+  Presented at International Day of Women and Girls in Science, Hyderabad on 13th February 2020 
 - [Talk](./talks/PV_meeting_chalcogenides_perovskites.pdf): Following the reaction: Computational spectroscopy of the BaZrS<sub>3</sub> perovskite 
 - [Poster](./talks/BaZrS3_23March2022.pdf): Following the reaction: Computational spectroscopy of perovskite BaZrS<sub>3</sub>  
   Presented at the IOP Advances in Photovoltaics conference, London on 23rd March 2022 
