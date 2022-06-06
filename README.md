@@ -23,9 +23,9 @@ Here is a list of my publications:
  
 Here is a list of talks/posters I've delivered:   
 Note: If you find an error/inconsistencies in any of the following please [reach out](mailto:prakayastha314@gmail.com), I would greatly appreciate it. 
-- Poster: Big Data of AB2X2 and AA'B4X4 materials 
+- Poster: Big Data of AB<sub>2</sub>X<sub>2</sub> and AA'B<sub>4</sub>X<sub>4</sub> materials 
   Presented at the Pan-TIFR chemistry meeting, Hyderabad on 30th November 2018
-- Poster: Data driven chemical insights into stability of 18e- AB2X2 chalcogenides 
+- Poster: Data driven chemical insights into stability of 18e- AB<sub>2</sub>X<sub>2</sub> chalcogenides 
   Presented at the TIFR Annual Chemistry Conference, Mumbai on 17th October 2019 
 - Talk: Group theory of crystal structure preferences 
   Presented at International Day of Women and Girls in Science, Hyderabad on 13th February 2020 
