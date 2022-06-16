@@ -29,7 +29,7 @@ Note: If you find an error/inconsistencies in any of the following please [reach
 - [Poster](./talks/BaZrS3_23March2022.pdf): Following the reaction: Computational spectroscopy of perovskite BaZrS<sub>3</sub>  
   Presented at the IOP Advances in Photovoltaics conference, London on 23rd March 2022 
 - [Talk](./talks/PV_meeting_chalcogenides_perovskites.pdf): Following the reaction: Computational spectroscopy of the BaZrS<sub>3</sub> perovskite 
-- Talk: Group theory of crystal structure preferences 
+- Talk: Group theory of crystal structure preferences   
   Presented at International Day of Women and Girls in Science, Hyderabad on 13th February 2020 
 - Poster: Data driven chemical insights into stability of 18e- AB<sub>2</sub>X<sub>2</sub> chalcogenides  
   Presented at the TIFR Annual Chemistry Conference, Mumbai on 17th October 2019 
