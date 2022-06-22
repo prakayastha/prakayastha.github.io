@@ -37,5 +37,5 @@ Note: If you find an error/inconsistencies in any of the following please [reach
   Presented at the Pan-TIFR chemistry meeting, Hyderabad on 30th November 2018 
   
 ## Software
-- I am working on developing a FHI-aims interface for [Phonopy-Spectroscopy](https://github.com/JMSkelton/Phonopy-Spectroscopy/) (original code written by [Jonathan M. Skelton](https://github.com/JMSkelton/))
+- I am working on developing a FHI-aims interface for [Phonopy-Spectroscopy](https://github.com/JMSkelton/Phonopy-Spectroscopy/) (original code written by [Jonathan M Skelton](https://github.com/JMSkelton/))
 - [ThermoPot](https://github.com/NU-CEM/ThermoPot): Lucy and I are working on making a generalised version of [ab intio thermodynamic modelling](https://github.com/WMD-group/CZTS-model) of a material (original code by [Adam J Jackson](https://github.com/ajjackson)) 
