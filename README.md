@@ -35,3 +35,7 @@ Note: If you find an error/inconsistencies in any of the following please [reach
   Presented at the TIFR Annual Chemistry Conference, Mumbai on 17th October 2019 
 - Poster: Big Data of AB<sub>2</sub>X<sub>2</sub> and AA'B<sub>4</sub>X<sub>4</sub> materials  
   Presented at the Pan-TIFR chemistry meeting, Hyderabad on 30th November 2018 
+  
+## Software
+- I am working on developing a FHI-aims interface for [Phonopy-Spectroscopy](https://github.com/JMSkelton/Phonopy-Spectroscopy/) (original code written by [Jonathan M. Skelton](https://github.com/JMSkelton/))
+- [ThermoPot](https://github.com/NU-CEM/ThermoPot): Lucy and I are working on making a generalised version of [ab intio thermodynamic modelling](https://github.com/WMD-group/CZTS-model) of a material (original code by [Adam J Jackson](https://github.com/ajjackson)) 
