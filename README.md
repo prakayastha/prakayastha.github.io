@@ -23,6 +23,8 @@ Currently, I am working on modelling spectroscopy and thermodynamics of an alter
  
 ## Talks/Posters:   
 Note: If you find an error/inconsistencies in any of the following please [reach out](mailto:prakayastha314@gmail.com), I would greatly appreciate it. 
+- [Poster](./talks/BaZrS3_4July2022.pdf): Following the reaction: Computational spectroscopy of perovskite BaZrS<sub>3</sub> (updated version with IR and Raman spectra)   
+  Presented at the Emerging inorganic materials in thin-film photovoltaics Faraday Discussion, Bath on 4th and 5th July 2022
 - [Talk](./talks/Symmetry_relaxation_pro_tips.pdf): Symmetry constrained relaxation with FHI-aims 
 - [Poster](./talks/Phonopy-Spectroscopy_8June2022.pdf): Phonopy-Spectroscopy: A computational spectroscopy modelling package  
   Presented at the Royal Society Software Solutions to the Challenges of Materials Modelling satellite meeting, Northampton on 8th June 2022 
