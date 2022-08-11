@@ -5,9 +5,10 @@ Hello and welcome to my personal website!
 I am Prakriti Kayastha, a PhD student at Northumbria University, UK. I am part of the Center for Doctoral Training in Renewable Energy Northeast Universities [(ReNU)](https://renu.northumbria.ac.uk/). My work is based on modelling materials using density functional theory (DFT). I am a computational physicist with an interest in machine learning. 
 
 My PhD advisor [Lucy](https://lucydot.github.io/) and I are interested in modelling materials for next-generation photovoltaics and battery materials. These are very broad topics in themselves and I hope I can make a humble contribution to the field through during my PhD years. 
-Before starting my PhD, I was part of the [moldis-group](https://moldis-group.github.io/) at Tata Institute of Fundamental Research Hyderabad, India. This is where my journey as a researcher began. It is where I developed my own interests in DFT and learnt some machine learning techniques. I am particularly interested in crystallography and symmetries of materials and I am always excited to talk about it. 
+Before starting my PhD, I was part of the [moldis-group](https://moldis-group.github.io/) at Tata Institute of Fundamental Research Hyderabad, India. I am particularly interested in crystallography and symmetries of materials and I am always excited to talk about it. 
 
-Currently, I am working on modelling spectroscopy and thermodynamics of an alternative Pb-based perovskite for solar cell applications. A very bare-bones website is hosted [here](https://prakayastha.github.io/chalcogenide_perovskite/).
+Currently, I am working on modelling spectroscopy and thermodynamics of an alternative Pb-based perovskite for solar cell applications. A very bare-bones website is hosted [here](https://prakayastha.github.io/chalcogenide_perovskite/). Soon we are planning to move to Mg-based cathode materials where we will study their disorder properties. 
+
 
 ## Publications
 - The Physical Significance of Imaginary Phonon Modes in Crystals [Electron. Struct. (2022)](https://iopscience.iop.org/article/10.1088/2516-1075/ac78b3)
