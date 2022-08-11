@@ -23,20 +23,20 @@ Currently, I am working on modelling spectroscopy and thermodynamics of an alter
  
 ## Talks/Posters:   
 Note: If you find an error/inconsistencies in any of the following please [reach out](mailto:prakayastha314@gmail.com), I would greatly appreciate it. 
-- [Poster](./talks/BaZrS3_4July2022.pdf): Following the reaction: Computational spectroscopy of perovskite BaZrS<sub>3</sub> (updated version with IR and Raman spectra)   
-  Presented at the Emerging inorganic materials in thin-film photovoltaics Faraday Discussion, Bath on 4th and 5th July 2022
-- [Talk](./talks/Symmetry_relaxation_pro_tips.pdf): Symmetry constrained relaxation with FHI-aims 
-- [Poster](./talks/Phonopy-Spectroscopy_8June2022.pdf): Phonopy-Spectroscopy: A computational spectroscopy modelling package  
-  Presented at the Royal Society Software Solutions to the Challenges of Materials Modelling satellite meeting, Northampton on 8th June 2022 
-- [Poster](./talks/BaZrS3_23March2022.pdf): Following the reaction: Computational spectroscopy of perovskite BaZrS<sub>3</sub>  
-  Presented at the IOP Advances in Photovoltaics conference, London on 23rd March 2022 
-- [Talk](./talks/PV_meeting_chalcogenides_perovskites.pdf): Following the reaction: Computational spectroscopy of the BaZrS<sub>3</sub> perovskite 
-- Talk: Group theory of crystal structure preferences   
-  Presented at International Day of Women and Girls in Science, Hyderabad on 13th February 2020 
+- [Poster](./talks/BaZrS3_4July2022.pdf): Following the reaction: Computational spectroscopy of perovskite BaZrS<sub>3</sub>        
+  IOP Advances in Photovoltaics conference, London on 23rd March 2022    
+  Emerging inorganic materials in thin-film photovoltaics Faraday Discussion, Bath on 4th and 5th July 2022      
+  CAMD summer school, Copenhagen 15th August 2022      
+- [Talk](./talks/Symmetry_relaxation_pro_tips.pdf): Symmetry constrained relaxation with FHI-aims, 10th June 2022 Imperial College London and 13th June 2022 University College London     
+- [Poster](./talks/Phonopy-Spectroscopy_8June2022.pdf): Phonopy-Spectroscopy: A computational spectroscopy modelling package    
+  Royal Society Software Solutions to the Challenges of Materials Modelling satellite meeting, Northampton on 8th June 2022    
+- [Talk](./talks/PV_meeting_chalcogenides_perovskites.pdf): Following the reaction: Computational spectroscopy of the BaZrS<sub>3</sub> perovskite   
+- Talk: Group theory of crystal structure preferences    
+  International Day of Women and Girls in Science, Hyderabad on 13th February 2020 
 - Poster: Data driven chemical insights into stability of 18e- AB<sub>2</sub>X<sub>2</sub> chalcogenides  
-  Presented at the TIFR Annual Chemistry Conference, Mumbai on 17th October 2019 
+  TIFR Annual Chemistry Conference, Mumbai on 17th October 2019 
 - Poster: Big Data of AB<sub>2</sub>X<sub>2</sub> and AA'B<sub>4</sub>X<sub>4</sub> materials  
-  Presented at the Pan-TIFR chemistry meeting, Hyderabad on 30th November 2018 
+  Pan-TIFR chemistry meeting, Hyderabad on 30th November 2018 
   
 ## Software
 - I am working on developing a FHI-aims interface for [Phonopy-Spectroscopy](https://github.com/JMSkelton/Phonopy-Spectroscopy/) (original code written by [Jonathan M Skelton](https://github.com/JMSkelton/))
