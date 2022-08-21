@@ -11,15 +11,15 @@ Currently, I am working on modelling spectroscopy and thermodynamics of an alter
 
 
 ## Publications
-- The Physical Significance of Imaginary Phonon Modes in Crystals [Electron. Struct. (2022)](https://iopscience.iop.org/article/10.1088/2516-1075/ac78b3)
+- The Physical Significance of Imaginary Phonon Modes in Crystals [Electron Struct (2022)](https://iopscience.iop.org/article/10.1088/2516-1075/ac78b3)
   - Summary: Do not be alarmed if you see imaginary phonon modes in your (converged) calculations! They uncover great physical insights of the underlying potential energy surface and phase transitions of the systems. 
-- Quantum Machine Learning Transition Probabilities in Electronic Excitation Spectra across Chemical Space: The Resolution-vs.-Accuracy Dilemma [arXiv (2021)](https://arxiv.org/pdf/2110.11798.pdf)
+- Quantum Machine Learning Transition Probabilities in Electronic Excitation Spectra across Chemical Space: The Resolution-vs.-Accuracy Dilemma [Digital Discov (2022)](https://doi.org/10.1039/D1DD00031D)
   - Summary: A new dataset for full excited state spectra of molecules in the [GDB](https://doi.org/10.1021/ci600423u) universe. Machine learning of excited state spectra over a range of wavelengths with front-runner representations using kernel ridge regression. 
-- Machine learning modeling of materials with a group-subgroup structure [Mach. Learn.: Sci. Technol. (2021)](https://doi.org/10.1088/2632-2153/abffe9)
+- Machine learning modeling of materials with a group-subgroup structure [Mach Learn: Sci Technol (2021)](https://doi.org/10.1088/2632-2153/abffe9)
   - Summary: If you have property information from a subgroup, then including some examples from the group can reproduce their properties (within an acceptable error bar); circumventing the cost of DFT evaluations of the group. 
-- High-throughput design of Peierls and charge density wave phases in Q1D organometallic materials [J Chem. Phys. (2021)](https://doi.org/10.1063/5.0041717) 
+- High-throughput design of Peierls and charge density wave phases in Q1D organometallic materials [J Chem Phys (2021)](https://doi.org/10.1063/5.0041717) 
   - Summary: Using positions of the maximum instability in the phonon mode to determine how many formula units it takes to stabilize Q1D polymers. Peierls and charge density wave phases found available for [data-mining](https://moldis.tifrh.res.in/db/rmq1d). 
-- The chemical space of B, N-substituted polycyclic aromatic hydrocarbons: Combinatorial enumeration and high-throughput first-principles modeling [J Chem. Phys. (2019)](https://doi.org/10.1063/1.5088083)
+- The chemical space of B, N-substituted polycyclic aromatic hydrocarbons: Combinatorial enumeration and high-throughput first-principles modeling [J Chem Phys (2019)](https://doi.org/10.1063/1.5088083)
   - Summary: The chemical space of of B,N substituted hydrocarbons is huge! 1.2 tera molecules (and even more) huge! These molecules have potential to be good opto-electronic materials available for [data-mining](https://moldis.tifrh.res.in/db/dbbnpah). 
  
 ## Talks/Posters:   
@@ -27,7 +27,7 @@ Note: If you find an error/inconsistencies in any of the following please [reach
 - [Poster](./talks/BaZrS3_4July2022.pdf): Following the reaction: Computational spectroscopy of perovskite BaZrS<sub>3</sub>        
   IOP Advances in Photovoltaics conference, London on 23rd March 2022    
   Emerging inorganic materials in thin-film photovoltaics Faraday Discussion, Bath on 4th and 5th July 2022      
-  CAMD summer school, Copenhagen 15th August 2022      
+  CAMD summer school, Helsingør 15th August 2022      
 - [Talk](./talks/Symmetry_relaxation_pro_tips.pdf): Symmetry constrained relaxation with FHI-aims, 10th June 2022 Imperial College London and 13th June 2022 University College London     
 - [Poster](./talks/Phonopy-Spectroscopy_8June2022.pdf): Phonopy-Spectroscopy: A computational spectroscopy modelling package    
   Royal Society Software Solutions to the Challenges of Materials Modelling satellite meeting, Northampton on 8th June 2022    
