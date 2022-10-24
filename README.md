@@ -23,11 +23,14 @@ Currently, I am working on modelling spectroscopy and thermodynamics of an alter
   - Summary: The chemical space of of B,N substituted hydrocarbons is huge! 1.2 tera molecules (and even more) huge! These molecules have potential to be good opto-electronic materials available for [data-mining](https://moldis.tifrh.res.in/db/dbbnpah). 
  
 ## Talks/Posters:   
-Note: If you find an error/inconsistencies in any of the following please [reach out](mailto:prakayastha314@gmail.com), I would greatly appreciate it. 
+Note: If you find an error/inconsistencies in any of the following please [reach out](mailto:prakayastha314@gmail.com), I would greatly appreciate it.
+- Poster: Understanding the phase stability of BaZrS3 using ab-initio thermodynamics      
+  RSC Materials Chemistry Poster Symposium, London 17th November 2022             
 - [Poster](./talks/BaZrS3_4July2022.pdf): Following the reaction: Computational spectroscopy of perovskite BaZrS<sub>3</sub>        
   IOP Advances in Photovoltaics conference, London on 23rd March 2022    
   Emerging inorganic materials in thin-film photovoltaics Faraday Discussion, Bath on 4th and 5th July 2022      
-  CAMD summer school, Helsingør 15th August 2022      
+  CAMD summer school, Helsingør 15th August 2022                  
+  Fall MRS, Boston 29th November 2022               
 - [Talk](./talks/Symmetry_relaxation_pro_tips.pdf): Symmetry constrained relaxation with FHI-aims, 10th June 2022 Imperial College London and 13th June 2022 University College London     
 - [Poster](./talks/Phonopy-Spectroscopy_8June2022.pdf): Phonopy-Spectroscopy: A computational spectroscopy modelling package    
   Royal Society Software Solutions to the Challenges of Materials Modelling satellite meeting, Northampton on 8th June 2022    
