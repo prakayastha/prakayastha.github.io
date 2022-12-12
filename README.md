@@ -11,6 +11,8 @@ Currently, I am working on modelling spectroscopy and thermodynamics of an alter
 
 
 ## Publications
+- High temperature equilibrium of 3D and 2D chalcogenide perovskites [arXiv (2022)](
+https://doi.org/10.48550/arXiv.2212.01429)
 - The Physical Significance of Imaginary Phonon Modes in Crystals [Electron Struct (2022)](https://iopscience.iop.org/article/10.1088/2516-1075/ac78b3)
   - Summary: Do not be alarmed if you see imaginary phonon modes in your (converged) calculations! They uncover great physical insights of the underlying potential energy surface and phase transitions of the systems. 
 - Quantum Machine Learning Transition Probabilities in Electronic Excitation Spectra across Chemical Space: The Resolution-vs.-Accuracy Dilemma [Digital Discov (2022)](https://doi.org/10.1039/D1DD00031D)
@@ -26,7 +28,7 @@ Currently, I am working on modelling spectroscopy and thermodynamics of an alter
 Note: If you find an error/inconsistencies in any of the following please [reach out](mailto:prakayastha314@gmail.com), I would greatly appreciate it.
 - Poster: Understanding the phase stability of BaZrS3 using ab-initio thermodynamics      
   RSC Materials Chemistry Poster Symposium, London 17th November 2022             
-- [Poster](./talks/BaZrS3_4July2022.pdf): Following the reaction: Computational spectroscopy of perovskite BaZrS<sub>3</sub>        
+- [Poster](./talks/poster_boston.pdf): Following the reaction: Computational spectroscopy of perovskite BaZrS<sub>3</sub>        
   IOP Advances in Photovoltaics conference, London on 23rd March 2022    
   Emerging inorganic materials in thin-film photovoltaics Faraday Discussion, Bath on 4th and 5th July 2022      
   CAMD summer school, Helsingør 15th August 2022                  
