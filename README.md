@@ -11,8 +11,8 @@ Currently, I am working on modelling spectroscopy and thermodynamics of an alter
 
 
 ## Publications
-- High temperature equilibrium of 3D and 2D chalcogenide perovskites [arXiv (2022)](
-https://doi.org/10.48550/arXiv.2212.01429)
+- High temperature equilibrium of 3D and 2D chalcogenide perovskites [Solar RRL (2023)](
+https://doi.org/10.1002/solr.202201078)
 - The Physical Significance of Imaginary Phonon Modes in Crystals [Electron Struct (2022)](https://iopscience.iop.org/article/10.1088/2516-1075/ac78b3)
   - Summary: Do not be alarmed if you see imaginary phonon modes in your (converged) calculations! They uncover great physical insights of the underlying potential energy surface and phase transitions of the systems. 
 - Quantum Machine Learning Transition Probabilities in Electronic Excitation Spectra across Chemical Space: The Resolution-vs.-Accuracy Dilemma [Digital Discov (2022)](https://doi.org/10.1039/D1DD00031D)
