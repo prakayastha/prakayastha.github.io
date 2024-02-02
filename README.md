@@ -2,17 +2,18 @@
 
 Hello and welcome to my personal website!
 
-I am Prakriti Kayastha, a PhD student at Northumbria University, UK. I am part of the Center for Doctoral Training in Renewable Energy Northeast Universities [(ReNU)](https://renu.northumbria.ac.uk/). My work is based on modelling materials using density functional theory (DFT).
+I am Prakriti Kayastha, a PhD student at Northumbria University, UK. I am part of the Center for Doctoral Training in Renewable Energy Northeast Universities [(ReNU)](https://renu.northumbria.ac.uk/). My work is based on modelling materials using density functional theory (DFT) and machine learning (ML).
 
 My PhD advisor [Lucy](https://lucydot.github.io/) and I are interested in modelling materials for next-generation photovoltaics and battery materials. These are very broad topics in themselves and I hope I can make a humble contribution to the field during my PhD years. 
 Before starting my PhD, I was part of the [moldis-group](https://moldis-group.github.io/) at Tata Institute of Fundamental Research Hyderabad, India. I am particularly interested in crystallography and symmetries of materials and I am always excited to talk about it. 
 
-Currently, I am working on modelling the thermodynamic properties of BaZrS>sub>3</sub> for solar cell applications. Some properties that I have calculated have been collected in a very bare-bones website hosted [here](https://prakayastha.github.io/chalcogenide_perovskite/).
+Currently, I am working on modelling the properties of chalcogenide perovskites for solar cell applications. In particular I am interested in modelling the phonons and the properties that can be derived from them -- thermodynamics, IR and Raman spectroscopy and anharmoncity. 
 
 ## Publications
+- A first-principles thermodynamic model for the Ba−Zr−S system in equilibrium with sulfur vapour [arXiv](https://arxiv.org/pdf/2401.06092.pdf)   
 - High temperature equilibrium of 3D and 2D chalcogenide perovskites [Solar RRL (2023)](
-https://doi.org/10.1002/solr.202201078)
-- The Physical Significance of Imaginary Phonon Modes in Crystals [Electron Struct (2022)](https://iopscience.iop.org/article/10.1088/2516-1075/ac78b3)
+https://doi.org/10.1002/solr.202201078)   
+- The Physical Significance of Imaginary Phonon Modes in Crystals [Electron Struct (2022)](https://iopscience.iop.org/article/10.1088/2516-1075/ac78b3)  
 - Quantum Machine Learning Transition Probabilities in Electronic Excitation Spectra across Chemical Space: The Resolution-vs.-Accuracy Dilemma [Digital Discov (2022)](https://doi.org/10.1039/D1DD00031D)
 - Machine learning modeling of materials with a group-subgroup structure [Mach Learn: Sci Technol (2021)](https://doi.org/10.1088/2632-2153/abffe9)
 - High-throughput design of Peierls and charge density wave phases in Q1D organometallic materials [J Chem Phys (2021)](https://doi.org/10.1063/5.0041717) 
