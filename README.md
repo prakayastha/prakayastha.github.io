@@ -4,20 +4,20 @@ Hello and welcome to my personal website!
 
 I am Prakriti Kayastha, a PhD student at Northumbria University, UK. I am part of the Center for Doctoral Training in Renewable Energy Northeast Universities [(ReNU)](https://renu.northumbria.ac.uk/). My work is based on modelling materials using density functional theory and machine learning.
 
-My PhD advisor [Lucy](https://lucydot.github.io/) and I are interested in modelling materials for next-generation photovoltaics. This is a very broad topic in itself and I hope I can make a humble contribution to the field during my PhD years. 
-Currently, I am working on modelling the properties of chalcogenide perovskites for solar cell applications. I am interested in modelling the phonons and the properties that can be derived from them - thermodynamics, IR, and Raman spectroscopy. Here is a list of topics I'm closely working with at the moment:
+Broadly, I am interested in modelling materials for next-generation photovoltaics. 
+Currently, I am working on modelling the properties of chalcogenide perovskites for solar cell applications. 
+A particular focus is on the topic of phonons, through which several properties of interest can be derived - thermodynamics, spectroscopy, and phase transitions. Here is a summary of topics I'm closely working with at the moment:
+
 ![anharmonic_phonons](https://github.com/prakayastha/prakayastha.github.io/assets/49740967/a054a189-ab72-4296-be05-243b73a1d097)
 
-I have recently started to use machine learning potentials to model chalcogenide perovskites and related systems. However, I am always thinking about information theory, dataset curation, and descriptor space. 
-
-
-I am also very interested in crystallography and symmetries of materials and I am always excited to talk about it, [reach out](mailto:prakriti.kayastha@northumbria.ac.uk)!  
+We also use machine learning potentials, which is a state of the art technique to model the anharmonic potential energy surface of a material. Additionally, I am always thinking about information theory, dataset curation, and descriptor space. I am also very interested in crystallography and symmetries of materials and I am always excited to talk about it, [reach out](mailto:prakriti.kayastha@northumbria.ac.uk)!  
 
 
 ## Publications
 [Google Scholar](https://scholar.google.co.in/citations?user=XIU5zG4AAAAJ&hl=en&authuser=1)   
 [Orcid](https://orcid.org/0000-0002-4852-6445)    
 
+- Diverse Polymorphism in Ruddlesden-Popper chalcogenides [arXiv (2025)](https://arxiv.org/abs/2507.11300)
 - Octahedral Tilt-Driven Phase Transitions in BaZrS<sub>3</sub> Chalcogenide Perovskite [J Phys Chem Lett (2025)](https://pubs.acs.org/doi/10.1021/acs.jpclett.4c03517)
 - A first-principles thermodynamic model for the Ba−Zr−S system in equilibrium with sulfur vapour [ACS Appl Energy Mater (2024)](https://doi.org/10.1021/acsaem.3c03208)   
 - High temperature equilibrium of 3D and 2D chalcogenide perovskites [Solar RRL (2023)](https://doi.org/10.1002/solr.202201078)   
@@ -33,9 +33,10 @@ I am also very interested in crystallography and symmetries of materials and I a
 - Talk: Polymorphism in Ba-Zr-S Ruddlesden Popper phases    
   Fall MRS, Boston 4th December 2024         
   RSC Solid State Chemistry Christmas Meeting, University of Birmingham 15th December 2024        
-  nanoGe MATSUS, Sevilla 5th March 2025        
+  Modelling Club Meeting, University of Birmingham 23rd June 2025
 - Talk: Phase transitions in BaZrS3 using machine learning potentials          
-  Fall MRS, Boston 4th December 2024         
+  Fall MRS, Boston 4th December 2024
+  nanoGe MATSUS, Sevilla 5th March 2025              
 - Invited talk: Phase transitions in perovskites using machine learning potentials  
   FHI-aims UK meeting, Warwick University 15th-16th May 2024 
 - Invited talk: Chalcogenide perovskites for photovoltaics: guiding synthesis from first-principles  
