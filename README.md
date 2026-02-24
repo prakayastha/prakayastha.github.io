@@ -2,7 +2,7 @@
 
 Hello and welcome to my personal website!
 
-I am Prakriti Kayastha, an incoming postdoc at University College London (UCL). I will be working with Keith Bulter and the [Materials Design and Informatics group](https://mdi-group.github.io/) in the Chemistry Department at UCL. My work is based on modelling materials using density functional theory and machine learning. At UCL, I will be studying barocalorics, which are materials that undergo spontaneous phase transitions under pressure. I will be working with a team of scientists based in Queen Mary University of London and Diamond Light Source. I'm excited to bring my expertise to this project and at the same time am looking forward to learning more about core ML and collaborating with the wider community in London. 
+I am Prakriti Kayastha, a postdoc at University College London (UCL). I am based in the [Materials Design and Informatics group](https://mdi-group.github.io/) led by [Keith Butler](https://profiles.ucl.ac.uk/25193-keith-butler) in the Chemistry Department at UCL. My work is based on modelling materials using density functional theory and machine learning. At UCL, I will be studying barocalorics, which are materials that undergo spontaneous phase transitions under pressure. I will be working with a team of scientists based at Queen Mary University of London and Diamond Light Source. I'm excited to bring my expertise to this project, and at the same time, I am looking forward to learning more about core ML and collaborating with the wider community in London. 
 
 This work continues well from my PhD work, where I studied phase transitions in potential solar cell materials. 
 I got my PhD at Northumbria University, under the supervision of [Lucy Whalley](https://lucydot.github.io/). 
@@ -11,19 +11,19 @@ My PhD focused on studying atomic vibrations, also known as phonons, through whi
 
 Here is a summary of topics that interested me during this time:
 
-![anharmonic_phonons](https://github.com/prakayastha/prakayastha.github.io/assets/49740967/a054a189-ab72-4296-be05-243b73a1d097)
+<img width="500" height="500" alt="anharmonic phonons" src="https://github.com/prakayastha/prakayastha.github.io/assets/49740967/a054a189-ab72-4296-be05-243b73a1d097" />
 
-I use machine learning interatomic potentials to model the anharmonic potential energy surface of a material. These methods greatly reduce the evaluation time of energies and forces (on par with empirical force fields) while mainting (near) accuracy of <i>ab initio</i> methods. 
-<img width="1040" height="880" alt="MLIP" src="https://github.com/user-attachments/assets/138562fa-46dc-45f9-ab8a-7aa28d55ebbe" />
+I use machine learning interatomic potentials to model the anharmonic potential energy surface of a material. These methods greatly reduce the evaluation time of energies and forces (on par with empirical force fields) while maintaining (near) accuracy of <i>ab initio</i> methods. 
+<img width="500" height="500" alt="MLIP" src="https://github.com/user-attachments/assets/138562fa-46dc-45f9-ab8a-7aa28d55ebbe" />
 
-Additionally, I am always thinking about information theory, dataset curation, and descriptor space. I am also very interested in crystallography and symmetries of materials and I am always excited to talk about it, [reach out](mailto:prakriti.kayastha@northumbria.ac.uk)!  
+Additionally, I am always thinking about information theory, dataset curation, and descriptor space. I am also very interested in crystallography and symmetries of materials, and I am always excited to talk about it, [reach out](mailto:prakriti.kayastha@northumbria.ac.uk)!  
 
 
 ## Publications
 [Google Scholar](https://scholar.google.co.in/citations?user=XIU5zG4AAAAJ&hl=en&authuser=1)   
 [Orcid](https://orcid.org/0000-0002-4852-6445)    
 
-- Diverse Polymorphism in Ruddlesden-Popper chalcogenides [arXiv (2025)](https://arxiv.org/abs/2507.11300)
+- Diverse Polymorphism in Ruddlesden-Popper chalcogenides [Phys Rev Lett (2026)](https://doi.org/10.1103/f4kv-pk93)
 - Octahedral Tilt-Driven Phase Transitions in BaZrS<sub>3</sub> Chalcogenide Perovskite [J Phys Chem Lett (2025)](https://pubs.acs.org/doi/10.1021/acs.jpclett.4c03517)
 - A first-principles thermodynamic model for the Ba−Zr−S system in equilibrium with sulfur vapour [ACS Appl Energy Mater (2024)](https://doi.org/10.1021/acsaem.3c03208)   
 - High temperature equilibrium of 3D and 2D chalcogenide perovskites [Solar RRL (2023)](https://doi.org/10.1002/solr.202201078)   
