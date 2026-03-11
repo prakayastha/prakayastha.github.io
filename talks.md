@@ -1,14 +1,14 @@
-## Talks/Posters: 
+## Talks/Posters
 
 ### Upcoming:
 - Talk: (An)harmonic vibrations in chalcogenide perovskites       
   Computational Chemistry Seminar, University College London, 24th March 2026
 - Talk: Temperature-dependent spectroscopic properties of chalcogenide perovskites         
   Spring eMRS, Strasbourg, 27th May 2026
-- Invited Talk: Title TBD      
+- Invited talk: Title TBD      
   CECAM Workshop on Theoretical Realisation of Quantum Phenomena in Computational Materials Discovery, 22–24 June 2026
   
-### Past Seminars, Conferences, and Outreach
+### Past Seminars, Conferences, and Outreach:
 - Talk: Polymorphism in Ba-Zr-S Ruddlesden Popper phases        
   Fall MRS, Boston 4th December 2024         
   RSC Solid State Chemistry Christmas Meeting, University of Birmingham 15th December 2024         
