@@ -35,6 +35,15 @@
 
   <!-- Navigation -->
   <div class="navbar">
+    <!-- Home image on the left -->
+    <a href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/images/home-icon.png' | relative_url }}" alt="Home" width="40" style="vertical-align:middle;">
+    </a>
+
+    <!-- Spacer to push links to the right -->
+    <div style="flex:1"></div>
+
+    <!-- Top-right links -->
     <a href="{{ '/talks' | relative_url }}">Talks</a>
     <a href="{{ '/software' | relative_url }}">Software</a>
     <a href="{{ '/publications' | relative_url }}">Publications</a>
