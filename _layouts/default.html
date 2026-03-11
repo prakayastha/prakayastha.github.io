@@ -34,16 +34,13 @@
 <div class="container-lg px-3 my-5 markdown-body">
 
   <!-- Navigation -->
-  <div class="navbar">
-    <!-- Home image on the left -->
+  <div class="nav-left">
     <a href="{{ '/' | relative_url }}">
-      <img src="{{ '/assets/images/home.png' | relative_url }}" alt="Home" width="40" style="vertical-align:middle;">
+      <img src="{{ '/assets/images/home.png' | relative_url }}" alt="Home" width="40">
     </a>
+  </div>
 
-    <!-- Spacer to push links to the right -->
-    <div style="flex:1"></div>
-
-    <!-- Top-right links -->
+  <div class="nav-right">
     <a href="{{ '/talks' | relative_url }}">Talks</a>
     <a href="{{ '/software' | relative_url }}">Software</a>
     <a href="{{ '/publications' | relative_url }}">Publications</a>
