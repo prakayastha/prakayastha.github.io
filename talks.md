@@ -1,6 +1,7 @@
-## Talks/Posters
+## Talks and Outreach
 
 ### Upcoming:
+- Introduction to Git and GitHub (jointly presented with [Bradley Martin](https://bradleymartin.science/)), Data Science School organised by AIchemy, University of Liverpool, 14th September 2026
 - Invited talk, title TBA, Libisch lab at TU Wien, Austria, 23rd October 2026
   
 ### Past Seminars, Conferences, and Outreach:
