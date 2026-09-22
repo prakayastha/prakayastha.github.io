@@ -3,6 +3,9 @@
 This is a space to collect my weekly logs on things I've been thinking about, things that excite me, or things that I want to learn. Like many things in my life, this exercise is also inspired by [Lucy](https://lucydot.github.io/news/).   
 Being an academic can sometimes feel like nothing fruitful has happened if something isn't published every other month, but that obviously isn't true. Good science takes time, so here's a record of some non-linear thinking. 
 
+22nd Sept 2026:    
+After a few weeks of Young downtime, I was finally able to run some long MD on the quin structures. I'm getting quite close to interpreting the order-disorder transitions through angular projections... could this be the first exciting(!) result of my postdoc? 
+
 16th Sept 2026:      
 I've worked on computing Raman spectra for a good few years now but never for hybrid organic-inorganic systems. This week I'm trying to reproduce the experimental results of some hybrid organic-inorganic perovskite-like structures. 
 
