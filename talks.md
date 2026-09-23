@@ -1,10 +1,13 @@
 ## Talks and Outreach
 
 ### Upcoming:
-- Introduction to Git and GitHub (jointly presented with [Bradley Martin](https://bradleymartin.science/)), Data Science School organised by AIchemy, University of Liverpool, 14th September 2026
-- Invited talk, title TBA, Libisch lab at TU Wien, Austria, 23rd October 2026
+
+- Invited talk, Dynamics of order-disorder phase transitions in barocaloric quinuclidinium salts, [Libisch lab](https://libisch.git-pages.tuwien.ac.at/group-homepage/)    
+  TU Wien, Austria, 23rd October 2026
   
 ### Past Seminars, Conferences, and Outreach:
+- [Workshop](https://github.com/mdi-group/intro-to-git-workshop): Introduction to Git and GitHub (jointly presented with [Bradley Martin](https://bradleymartin.science/)), Data Science School organised by AIchemy,
+  University of Liverpool, 14th September 2026
 - Talk: Temperature-dependent spectroscopic properties of chalcogenide perovskites         
   Spring eMRS, Strasbourg, 27th May 2026
 - Invited talk: Diverse Polymorphism in Ba-Zr-S Ruddlesden-Popper phases 
