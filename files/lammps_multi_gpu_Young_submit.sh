@@ -13,4 +13,4 @@ cd "$SLURM_SUBMIT_DIR"
 
 SIF=/home/mmm1350/Scratch/mace-lammps-young.sif
 
-apptainer exec --cleanenv --nv "$SIF" lmp_sge -np 1 -in in.lammps > out
+apptainer exec --cleanenv --nv "$SIF" lmp_sge -np 2 -in in.lammps > out
