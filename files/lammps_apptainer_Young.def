@@ -1,227 +1,117 @@
 Bootstrap: docker
-From: nvidia/cuda:12.4.1-devel-ubuntu22.04
+From: ubuntu:22.04
+
+# =============================================================================
+# LAMMPS + ML packages container for UCL Young
+#   - OpenMPI 4.1.1 with Omni-Path (PSM2) + SGE support, matching Young's
+#     default module mpi/openmpi/4.1.1/gnu-4.9.2
+#   - Compiled for Young's Xeon Gold 6248 (Cascade Lake) CPUs
+#
+# Build on any x86_64 Linux machine (NOT Apple Silicon / ARM):
+#     sudo apptainer build lammps-young.sif lammps-young.def
+#   or, without sudo but with fakeroot configured:
+#     apptainer build --fakeroot lammps-young.sif lammps-young.def
+#
+# Copy to Young:
+#     scp lammps-young.sif <user>@<young-login>:~/Scratch/containers/
+# =============================================================================
+
 %labels
-    Author      Bradley A. A. Martin
-    Target      UCL Young (A100-SXM4-40GB, Sun Grid Engine)
-    Description LAMMPS (stable_22Jul2025) + KOKKOS CUDA (sm80/A100) + ML-IAP + MACE + UCX + OpenMPI for Young SGE mpirun
-    LAMMPS      stable_22Jul2025
-    CUDA_Base   12.4.1
-    Torch       2.6.0+cu124
-    cuEq        0.7.0
-    MACE        0.3.14
-    UCX         1.16.0
-    OpenMPI     4.1.6
-%environment
-    # Prefixes
-    export UCX_PREFIX=/opt/ucx
-    export OMPI_PREFIX=/opt/openmpi
-    export LAMMPS_PREFIX=/opt/lammps
-    # Paths
-    export PATH=${LAMMPS_PREFIX}/bin:${OMPI_PREFIX}/bin:${UCX_PREFIX}/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-    export LD_LIBRARY_PATH=/.singularity.d/libs:${LAMMPS_PREFIX}/lib:${OMPI_PREFIX}/lib:${UCX_PREFIX}/lib:/usr/local/cuda/lib64:${LD_LIBRARY_PATH:-}
-    # Threading defaults (SGE jobs can override explicitly)
-    export OMP_NUM_THREADS=${OMP_NUM_THREADS:-1}
-    export PYTHONUNBUFFERED=1
-    # Prefer UCX for MPI transports; avoid smcuda
-    export OMPI_MCA_pml=ucx
-    export OMPI_MCA_osc=ucx
-    export OMPI_MCA_btl=^smcuda
-    # Optional: silence UCX unused env warnings
-    export UCX_WARN_UNUSED_ENV_VARS=n
+    Description LAMMPS stable (ML-IAP, ML-SNAP, ML-PACE, Python) for UCL Young
+    MPI OpenMPI-4.1.1-PSM2
+
 %post
-    set -eu
+    set -e
     export DEBIAN_FRONTEND=noninteractive
-    echo "=== [Base] System deps ==="
+
+    OMPI_VERSION=4.1.1                   # must match the host module on Young
+    ARCH_FLAGS="-O3 -march=cascadelake"  # Young's CPUs; don't use -march=native
+    NPROC=$(nproc)
+
+    # ---- System toolchain + Omni-Path libraries ----
     apt-get update
     apt-get install -y --no-install-recommends \
-        python3 python3-pip python3-dev python3-venv python3-setuptools python3-wheel python3-distutils \
-        build-essential git cmake ninja-build pkg-config \
-        wget curl ca-certificates \
-        m4 autoconf automake libtool flex bison make \
-        libfftw3-dev libssl-dev zlib1g-dev libffi-dev \
-        libblas-dev liblapack-dev gfortran \
-        libjpeg-dev libpng-dev \
-        libreadline-dev \
-        openssh-client \
-        vim less \
-        libhwloc-dev libevent-dev libnuma-dev \
-        uidmap \
-        libibverbs-dev librdmacm-dev \
-        libucx0 ucx-utils libucx-dev \
-        pybind11-dev
+        build-essential gfortran cmake git wget ca-certificates pkg-config \
+        python3 python3-dev python3-venv python3-pip \
+        libfftw3-dev zlib1g-dev libnuma-dev \
+        libpsm2-dev libfabric-dev
     rm -rf /var/lib/apt/lists/*
-    update-alternatives --install /usr/bin/python python /usr/bin/python3 10
-    echo "=== [Python] Upgrade pip and basic tools ==="
-    python -m pip install --upgrade --no-cache-dir pip wheel setuptools
-    echo "=== [Torch] Install PyTorch (CUDA 12.4 wheels) ==="
-    python -m pip install --no-cache-dir \
-        torch==2.6.0+cu124 torchvision==0.21.0+cu124 torchaudio==2.6.0+cu124 \
-        --index-url https://download.pytorch.org/whl/cu124
-    echo "=== [MACE stack] Install mace-torch, mace-models, deps ==="
-    python -m pip install --no-cache-dir \
-        cython \
-        numpy \
-        scipy \
-        ase \
-        h5py \
-        matplotlib \
-        pyfftw \
-        cupy-cuda12x \
-        e3nn \
-        mace-torch==0.3.14 \
-        mace-models
-    echo "=== [PIP] Install cuEquivariance 0.7.0 (base + torch + ops-cu12) ==="
-    python -m pip install --no-cache-dir \
-        cuequivariance==0.7.0 \
-        cuequivariance-torch==0.7.0 \
-        cuequivariance-ops-torch-cu12==0.7.0
-    echo "=== [UCX] Build UCX with CUDA support ==="
-    export UCX_VERSION=1.16.0
-    export UCX_PREFIX=/opt/ucx
-    cd /tmp
-    wget -q https://github.com/openucx/ucx/releases/download/v${UCX_VERSION}/ucx-${UCX_VERSION}.tar.gz
-    tar -xf ucx-${UCX_VERSION}.tar.gz
-    cd ucx-${UCX_VERSION}
-    ./configure \
-        --prefix=${UCX_PREFIX} \
-        --with-cuda=/usr/local/cuda \
-        --with-verbs \
-        --enable-mt
-    make -j"$(nproc)"
-    make install
-    cd /
-    rm -rf /tmp/ucx*
-    echo "=== [OpenMPI] Build CUDA + UCX aware OpenMPI for SGE-launched mpirun ==="
-    export OMPI_VERSION=4.1.6
-    export OMPI_PREFIX=/opt/openmpi
+
+    # ---- OpenMPI 4.1.1 with PSM2 (Omni-Path) and SGE support ----
     cd /tmp
     wget -q https://download.open-mpi.org/release/open-mpi/v4.1/openmpi-${OMPI_VERSION}.tar.gz
-    tar -xf openmpi-${OMPI_VERSION}.tar.gz
+    tar xzf openmpi-${OMPI_VERSION}.tar.gz
     cd openmpi-${OMPI_VERSION}
-    ./configure \
-        --prefix=${OMPI_PREFIX} \
-        --with-cuda=/usr/local/cuda \
-        --with-ucx=${UCX_PREFIX} \
-        --enable-mpi-cxx \
-        --disable-static \
+    ./configure --prefix=/opt/openmpi \
+        --with-psm2 \
+        --with-ofi \
+        --with-sge \
         --enable-shared
-    make -j"$(nproc)"
+    make -j${NPROC}
     make install
-    ln -sf ${OMPI_PREFIX}/bin/mpirun     /usr/bin/mpirun
-    ln -sf ${OMPI_PREFIX}/bin/mpiexec    /usr/bin/mpiexec
-    ln -sf ${OMPI_PREFIX}/bin/ompi_info  /usr/bin/ompi_info
-    cd /
-    rm -rf /tmp/openmpi*
-    echo "=== [mpi4py] Build against our OpenMPI ==="
-    export PATH=${OMPI_PREFIX}/bin:${PATH}
-    export LD_LIBRARY_PATH=${OMPI_PREFIX}/lib:${LD_LIBRARY_PATH}
-    MPICC=${OMPI_PREFIX}/bin/mpicc python -m pip install --no-cache-dir mpi4py
-    echo "=== [LAMMPS] Clone stable_22Jul2025 and build with KOKKOS(CUDA sm80) + ML-IAP ==="
-    export LAMMPS_PREFIX=/opt/lammps
-    mkdir -p "${LAMMPS_PREFIX}"
-    cd /tmp
-    rm -rf /tmp/lammps
-    git clone https://github.com/lammps/lammps.git
-    cd lammps
-    git checkout stable_22Jul2025
-    mkdir -p build
-    cd build
-    export MPI_HOME=${OMPI_PREFIX}
-    export PATH=${MPI_HOME}/bin:${PATH}
-    export LD_LIBRARY_PATH=${MPI_HOME}/lib:${LD_LIBRARY_PATH}
-    export CC=mpicc
-    export CXX=mpicxx
-    echo "=== [CUDA driver stubs] Make libcuda visible at build/link time ==="
-    export CUDA_HOME=/usr/local/cuda
-    export CUDA_STUBS=${CUDA_HOME}/lib64/stubs
-    ln -sf ${CUDA_STUBS}/libcuda.so ${CUDA_STUBS}/libcuda.so.1
-    export LIBRARY_PATH=${CUDA_STUBS}:${LIBRARY_PATH:-}
-    # Use LAMMPS' preset as a base
-    cp ../cmake/presets/kokkos-cuda.cmake ./
-    # Young GPUs are A100 (sm_80): build SASS-only to avoid PTX-version runtime issues.
-    cmake -C kokkos-cuda.cmake \
-        -S ../cmake -B . \
+    cd /tmp && rm -rf openmpi-${OMPI_VERSION}*
+
+    export PATH=/opt/openmpi/bin:$PATH
+    export LD_LIBRARY_PATH=/opt/openmpi/lib:$LD_LIBRARY_PATH
+
+    # ---- Python environment ----
+    python3 -m venv /opt/venv
+    . /opt/venv/bin/activate
+    pip install --no-cache-dir --upgrade pip wheel setuptools
+    pip install --no-cache-dir numpy scipy scikit-learn cython
+    pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cpu
+    MPICC=/opt/openmpi/bin/mpicc pip install --no-cache-dir --no-binary=mpi4py mpi4py
+
+    # ---- LAMMPS ----
+    cd /opt
+    git clone --depth 1 -b stable https://github.com/lammps/lammps.git
+    mkdir -p /opt/lammps/build
+    cd /opt/lammps/build
+
+    cmake ../cmake \
         -D CMAKE_BUILD_TYPE=Release \
-        -D CMAKE_INSTALL_PREFIX=${LAMMPS_PREFIX} \
+        -D CMAKE_CXX_FLAGS="${ARCH_FLAGS}" \
+        -D CMAKE_C_FLAGS="${ARCH_FLAGS}" \
         -D BUILD_MPI=ON \
+        -D BUILD_OMP=ON \
         -D BUILD_SHARED_LIBS=ON \
+        -D MPI_CXX_COMPILER=/opt/openmpi/bin/mpicxx \
+        -D FFT=FFTW3 \
         -D PKG_ML-IAP=ON \
         -D PKG_ML-SNAP=ON \
-        -D MLIAP_ENABLE_PYTHON=ON \
+        -D PKG_ML-PACE=ON \
         -D PKG_PYTHON=ON \
-        -D Kokkos_ARCH_AMPERE80=ON \
-        -D CMAKE_CUDA_ARCHITECTURES=80-real \
-        -D CMAKE_SHARED_LINKER_FLAGS="-Wl,-rpath-link,${CUDA_STUBS} -L${CUDA_STUBS}" \
-        -D CMAKE_EXE_LINKER_FLAGS="-Wl,-rpath-link,${CUDA_STUBS} -L${CUDA_STUBS}" \
-        -D CMAKE_INSTALL_RPATH="${LAMMPS_PREFIX}/lib;${OMPI_PREFIX}/lib;${UCX_PREFIX}/lib;/usr/local/cuda/lib64" \
-        -D CMAKE_BUILD_WITH_INSTALL_RPATH=ON
-    cmake --build . -j"$(nproc)"
-    cmake --install .
-    cmake --build . --target install-python
-    ln -sf ${LAMMPS_PREFIX}/bin/lmp /usr/bin/lmp
-    echo "=== [Wrapper] Young SGE-friendly launcher (uses scheduler machinefile when present) ==="
-    cat >/usr/local/bin/lmp_sge <<'EOF'
-#!/usr/bin/env bash
-set -euo pipefail
-MPIRUN=/opt/openmpi/bin/mpirun
-LMP=/opt/lammps/bin/lmp
-NP="${NSLOTS:-1}"
-if [[ "${1:-}" == "-np" ]]; then
-  NP="$2"
-  shift 2
-fi
-HOSTFILE=""
-if [[ -n "${TMPDIR:-}" && -f "${TMPDIR}/machines" ]]; then
-  HOSTFILE="${TMPDIR}/machines"
-elif [[ -n "${PE_HOSTFILE:-}" && -f "${PE_HOSTFILE}" ]]; then
-  HOSTFILE="${TMPDIR:-/tmp}/openmpi.hostfile.${JOB_ID:-$$}"
-  awk 'NF >= 2 { printf "%s slots=%s\n", $1, $2 }' "${PE_HOSTFILE}" > "${HOSTFILE}"
-fi
-# If the user already set OMP_NUM_THREADS keep it. Otherwise, for the common
-# single-rank case, use the allocated slot count as a sensible default.
-if [[ -z "${OMP_NUM_THREADS:-}" && "${NP}" == "1" && -n "${NSLOTS:-}" ]]; then
-  export OMP_NUM_THREADS="${NSLOTS}"
-fi
-if [[ "${1:-}" == "--" ]]; then
-  shift
-  LMP_ARGS=("$@")
-else
-  LMP_ARGS=(-k on g 1 -sf kk -pk kokkos gpu/aware on neigh half newton on "$@")
-fi
-MPI_ARGS=(--allow-run-as-root -np "${NP}" --bind-to none)
-if [[ -n "${HOSTFILE}" ]]; then
-  MPI_ARGS+=(--hostfile "${HOSTFILE}")
-fi
-exec "${MPIRUN}" "${MPI_ARGS[@]}" bash -lc '
-set -euo pipefail
-LR=${OMPI_COMM_WORLD_LOCAL_RANK:-0}
-# GPU selection:
-#  - Preserve CUDA_VISIBLE_DEVICES if the job script already set it.
-#  - GPU_LIST="1,2,3,4" maps rank->GPU (cycles if fewer GPUs than ranks).
-#  - GPU_OFFSET=1 maps rank0->GPU1, rank1->GPU2, ...
-if [[ -n "${CUDA_VISIBLE_DEVICES:-}" ]]; then
-  :
-elif [[ -n "${GPU_LIST:-}" ]]; then
-  IFS=, read -ra GPUS <<< "${GPU_LIST}"
-  if (( ${#GPUS[@]} == 1 )); then
-    export CUDA_VISIBLE_DEVICES="${GPUS[0]}"
-  else
-    idx=$(( LR % ${#GPUS[@]} ))
-    export CUDA_VISIBLE_DEVICES="${GPUS[$idx]}"
-  fi
-elif [[ -n "${GPU_OFFSET:-}" ]]; then
-  export CUDA_VISIBLE_DEVICES="$((LR + GPU_OFFSET))"
-else
-  export CUDA_VISIBLE_DEVICES="${LR}"
-fi
-exec /opt/lammps/bin/lmp "$@"
-' bash "${LMP_ARGS[@]}"
-EOF
-    chmod +x /usr/local/bin/lmp_sge
-    ln -sf /usr/local/bin/lmp_sge /usr/bin/lmp_sge
-    echo "=== [Cleanup] Remove tmp build dirs ==="
-    cd /
-    rm -rf /tmp/lammps
-    echo "=== [Done] Build complete ==="
+        -D MLIAP_ENABLE_PYTHON=ON \
+        -D PKG_MANYBODY=ON \
+        -D PKG_KSPACE=ON \
+        -D PKG_MISC=ON \
+        -D PKG_OPENMP=ON \
+        -D Python_EXECUTABLE=/opt/venv/bin/python \
+        -D CMAKE_INSTALL_PREFIX=/opt/lammps/install
+
+    make -j${NPROC}
+    make install
+    make install-python
+
+    # Keep the image smaller: drop the build tree (sources stay for reference)
+    rm -rf /opt/lammps/build
+
+    echo "LAMMPS build complete"
+
+%environment
+    export PATH=/opt/lammps/install/bin:/opt/openmpi/bin:/opt/venv/bin:$PATH
+    export LD_LIBRARY_PATH=/opt/lammps/install/lib:/opt/openmpi/lib:$LD_LIBRARY_PATH
+    export OMP_NUM_THREADS=${OMP_NUM_THREADS:-1}
+
 %runscript
-    exec "$@"
+    exec lmp "$@"
+
+%test
+    # On a CPU without AVX-512, lmp will fail here with "illegal instruction".
+    # That's expected when building on a non-Cascade-Lake machine; it will run on Young.
+    if grep -q avx512f /proc/cpuinfo; then
+        lmp -h | head -n 40
+    else
+        echo "Build host lacks AVX-512: skipping lmp test (run 'apptainer test' on Young)"
+    fi
+    ompi_info | grep -i -E "mtl: psm2|mtl: ofi" || echo "WARNING: no PSM2/OFI support in OpenMPI"
